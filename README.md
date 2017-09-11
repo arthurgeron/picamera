@@ -1,6 +1,6 @@
 # PiCamera
 Project developed to turn any device into a security camera. This is a University project.
-[![N|Solid](https://secure.meetupstatic.com/photos/event/e/7/7/c/global_432659260.jpeg)](https://nodesource.com/products/nsolid)
+[Solid](https://secure.meetupstatic.com/photos/event/e/7/7/c/global_432659260.jpeg)
 ## Usage   
 Run `main.py` and open `http://localhost:5000` on your web browser
 ## Requirements   
