@@ -2,8 +2,12 @@
 from importlib import import_module
 import os
 from flask import Flask, render_template, Response
-
+# check if root
+if os.getuid() != 0:
+    print("I can't run as a mortal. Sorry. Try to run me with admin privileges")
+    exit()
 # import camera driver
+
 Camera = import_module('camera_opencv').Camera
 
 # Raspberry Pi camera module (requires picamera package)
@@ -33,4 +37,4 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', threaded=True)
+    app.run(host='0.0.0.0', port=80, threaded=True)
